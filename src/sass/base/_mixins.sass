@@ -1,0 +1,23 @@
+@mixin before_circle 
+    &:before 
+        content: ''
+        position: absolute
+        z-index: -1
+        left: 0
+        top: -30%
+        width: 36px
+        height: 36px
+        border-radius: 100%
+        background: $main-color
+    
+@mixin animation
+        &
+            text-decoration: none
+            background-image: linear-gradient(currentColor, currentColor)
+            background-position: 0% 100%
+            background-repeat: no-repeat
+            background-size: 0% 2px
+            transition: background-size .3s
+
+        &:hover
+            background-size: 100% 2px

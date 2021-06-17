@@ -1,4 +1,54 @@
-p
-    font-size: 40px
-div 
-    font-size: 120px
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap')
+
+@import base/_variables
+@import base/_mixins
+
+*
+    font-family: 'Poppins', sans-serif
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+
+.container
+    width: 1140px
+    margin: 0 auto
+
+.fixed_contact
+    position: fixed
+    width: 340px
+    display: flex
+    justify-content: space-between
+    align-items: center
+    transform: rotate(-90deg)
+    top: 300px
+    left: -10%
+    .text
+        font-weight: bold
+        font-size: 16px
+        line-height: 24px
+        color: #ffffff
+        transition: color .85s
+    .line
+        width: 70px
+        height: 2px
+        background-color: #ffffff
+        transition: background-color .85s
+    .contacts
+        width: 90px
+        display: flex
+        justify-content: space-between
+        .github, .vk, .instagram
+            text-decoration: none
+            color: #ffffff
+            transition: color .85s
+            i
+                width: 20px
+                height: 20px
+        
+
+@import blocks/_header
+@import blocks/_title
+@import blocks/_button
+@import blocks/_hamburger
+@import blocks/_information
+@import blocks/_menu

@@ -40,12 +40,76 @@
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="stylesheet" href="css/general.min.css">
 </head>
 <body>
-    <p>sdfsdf</p>
-    <div>asdhashds</div>
+    <section class="header">
+        <div class="overlay_active">
+            <div class="overlay_wrapper">
+                <div class="overlay_close">&times;</div>
+                <ul class = "menu">
+                    <li class="menu_item"><a href="#about">ПРО МЕНЯ</a></li>
+                    <li class="menu_item"><a href="#">МОЙ ОПЫТ</a></li>
+                    <li class="menu_item"><a href="#">МОИ НАВЫКИ</a></li>
+                    <li class="menu_item"><a href="#">МОИ РАБОТЫ</a></li>
+                    <li class="menu_item"><a href="#">ПРАЙС-ЛИСТ</a></li>
+                    <li class="menu_item"><a href="#">КОНТАКТЫ</a></li>
+                </ul>
+                <div class="overlay_contacts">
+                    <a href="https://github.com/AlexShatokhin" class="github" ><i class="fab fa-github"></i></a>
+                    <a href="https://www.instagram.com/maybeiamsasha/" class="instagram" ><i class="fab fa-instagram"></i></a>
+                    <a href="https://vk.com/shaa2004" class="vk"><i class="fab fa-vk"></i></a>
+                </div>                
+            </div>
+        </div>
+        <div class="menu_background"></div>
+        <div class="fixed_contact">
+            <div class="color text" >Социальные сети</div>
+            <div class="backcolor line" ></div>
+            <div class="contacts">
+                <a href="https://github.com/AlexShatokhin" class="color github" ><i class="fab fa-github"></i></a>
+                <a href="https://www.instagram.com/maybeiamsasha/" class="color instagram" ><i class="fab fa-instagram"></i></a>
+                <a href="https://vk.com/shaa2004" class="color vk"><i class="fab fa-vk"></i></a>
+            </div>
+        </div>
+        <div class="container">
+            <div class="wrapper">
+                <div class="subtitle subtitle__white circle">Меня зовут Александр Шатохин</div>
+                <div class="title__white">Я web-разработчик <br> из города Тирасполь</div>
+                <div class="btn_wrapper">
+                    <a href="#" class="button first_btn">Портфолио</a>
+                    <a href="#about" class="sec_btn">Про меня</a>
+                </div>                
+            </div>
+
+        </div>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </section>
+    <section class="info" id ="about">
+        <div class="container">
+            <div class="info_wrapper">
+                <div class="myPhoto">
+                    <img src="img/about_me.jpg" alt="me" class="me">
+                </div>
+                <div class="descr">
+                    <div class="subtitle">Про меня</div>
+                    <div class="title">Меня зовут Александр</div>
+                    <hr>
+                    <div class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</div>
+                </div>            
+            </div>                
+        </div>
+
+
+    </section>
+
+    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>
