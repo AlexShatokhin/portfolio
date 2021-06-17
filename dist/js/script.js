@@ -24,7 +24,7 @@ $('.hamburger').click(function(){
     $('.menu_background').addClass('menu_background_active');
 });
 
-$('.overlay_close').click(function(){
+$('.close').click(function(){
     $('.overlay_active').removeClass('overlay');
     $('.menu_background').removeClass('menu_background_active');
 });
