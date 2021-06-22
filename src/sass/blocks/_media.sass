@@ -5,8 +5,26 @@
         left: -12%
     .wrapper
         padding-left: 220px
-    .myPhoto
-        padding-left: 100px
+    .info_wrapper
+        padding: 0 70px
+        .title
+            line-height: 35px
+    .skill
+        .container_grid
+            padding: 0 70px
+    .cont_grid
+        padding: 0 50px
+        justify-content: center
+        .skill_percent
+            margin: 10px 20px
+    .connection_content
+        padding: 0 70px
+    .connection_text
+        margin-left: 20px
+    .connection_form
+        .form_input
+            input
+                width: 88%
 
 @media(max-width: 992px)
     .wrapper
@@ -18,8 +36,32 @@
             margin-left: 15px
         .title
             line-height: 37px
-    .myPhoto
-        padding-left: 80px    
+    .skill
+        margin-top: 70px
+    .cont_grid
+        .skill_percent
+            width: 270px
+    .connection_text
+        .title
+            line-height: 33px
+            margin-bottom: 15px
+        hr
+            margin-bottom: 15px
+        .links
+            width: 120px
+            margin-bottom: 0
+            i
+                font-size: 30px
+        .txt
+            font-size: 14px
+            margin-bottom: 15px
+    .connection_form
+        label
+            left: 5px
+            font-size: 12px
+    .connection
+        button
+            margin-top: 15px
 
 @media(max-width: 767px)
     .header
@@ -40,6 +82,13 @@
                 margin-top: 10px
     .myPhoto
         padding-left: 0
+    .cont_grid
+        .skill_percent
+            margin-top: 40px
+    .connection_content
+        padding: 0 20px
+    .connection_photo
+        display: none
 
 @media(max-width: 525px)
     .header
@@ -63,3 +112,17 @@
             padding-left: 50px
             &::before
                 left: 20px
+    .works
+        hr
+            margin-bottom: 20px
+        .project_link
+            &:hover
+                opacity: 0
+    .skill
+        .title
+            line-height: 35px
+        .container_grid
+            padding: 0 15px
+
+
+

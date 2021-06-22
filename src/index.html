@@ -49,12 +49,10 @@
             <div class="overlay_wrapper">
                 <div class="overlay_close close">&times;</div>
                 <ul class = "menu">
-                    <li class="menu_item"><a class="close" href="#about">ПРО МЕНЯ</a></li>
-                    <li class="menu_item"><a class="close" href="#">МОЙ ОПЫТ</a></li>
-                    <li class="menu_item"><a class="close" href="#">МОИ НАВЫКИ</a></li>
-                    <li class="menu_item"><a class="close" href="#">МОИ РАБОТЫ</a></li>
-                    <li class="menu_item"><a class="close" href="#">ПРАЙС-ЛИСТ</a></li>
-                    <li class="menu_item"><a class="close" href="#">КОНТАКТЫ</a></li>
+                    <li class="menu_item"><a target="_blank" class="close" href="#about">ПРО МЕНЯ</a></li>
+                    <li class="menu_item"><a target="_blank" class="close" href="#">МОИ НАВЫКИ</a></li>
+                    <li class="menu_item"><a target="_blank" class="close" href="#">МОИ РАБОТЫ</a></li>
+                    <li class="menu_item"><a target="_blank" class="close" href="#">КОНТАКТЫ</a></li>
                 </ul>
                 <div class="overlay_contacts">
                     <a href="https://github.com/AlexShatokhin" class="github" ><i class="fab fa-github"></i></a>
@@ -104,8 +102,120 @@
                 </div>            
             </div>                
         </div>
+    </section>
 
+    <section class="skill">
+        <div class="container">
+            <div class="subtitle subtitle_centercircle">Навыки</div>
+            <div class="title">Что я использую в работе</div>
+            <hr>
+            <div class="container_grid">
+                <div class="skill_item">
+                    <img src="../icons/skills/HTML5.png" alt="" class="skill_image">
+                    <div class="skill_title"> <strong>HTML5</strong> </div>
+                    <div class="skill_descr">Именно он создает каркас вашего сайта или приложения, а пятая версия позволит мне создавать более SEO-оптимизированную структуру вашего продукта</div>
+                </div>
+                <div class="skill_item">
+                    <img src="../icons/skills/css3.png" alt="" class="skill_image">
+                    <div class="skill_title"> <strong>CSS3</strong> </div>
+                    <div class="skill_descr">Этот язык стилей позволяет мне создавать абсолютно любой внешний вид вашего сайта или приложения. Все ограничивается только вашей фантазией!</div>
+                </div>
+                <div class="skill_item">
+                    <img src="../icons/skills/JS.png" alt="" class="skill_image">
+                    <div class="skill_title"> <strong>Java Script</strong></div>
+                    <div class="skill_descr">Этот язык программирования позволяет оживить все что угодно: слайдеры, окна, подсказки, вкладки, получение данных от сервера и многое другое</div>
+                </div>
+            </div>            
+        </div>
+    </section>
 
+    <section class="skill_percents">
+        <div class="container">
+            <div class="cont_grid">
+                <div class="skill_percent">
+                    <div class="subtitle">Создание сайтов</div>
+                    <div class="percents">100%</div>
+                    <div class="skill_line">
+                        <div style="width: 100%" class="skill_line_main"></div>
+                    </div>
+                </div>
+                <div class="skill_percent">
+                    <div class="subtitle">Креативность</div>
+                    <div class="percents">75%</div>
+                    <div class="skill_line">
+                        <div style="width: 75%" class="skill_line_main"></div>
+                    </div>
+                </div>
+                <div class="skill_percent">
+                    <div class="subtitle">Создание дизайна</div>
+                    <div class="percents">90%</div>
+                    <div class="skill_line">
+                        <div style="width: 90%" class="skill_line_main"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="works">
+        <div class="container">
+            <div class="subtitle subtitle_centercircle">Портфолио</div>
+            <div class="title">Мои работы</div>
+            <hr>
+            <div class="content">
+                <div class="project project_1">
+                    <a target="_blank" href="https://alexshatokhin.github.io" class="project_link link">Uber</target=>
+                </div>
+                <div class="project project_2">
+                    <a target="_blank" href="https://alexshatokhin.github.io/RunSmart/src/" class="project_link">RunSmart</a>
+                </div>
+                <div class="project project_3">
+                    <a target="_blank" href="https://alexshatokhin.github.io/Kitchen/src/" class="project_link">Kitchens to order</a>
+                </div>
+                <div class="project project_4">
+                    <a target="_blank" href="https://alexshatokhin.github.io/FMC/" class="project_link link">Prengi</a>
+                </div>
+                <div class="project project_5">
+                    <a target="_blank" href="https://alexshatokhin.github.io/WordPress/src/" class="project_link link">WordPress</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="connection">
+        <div class="container">
+            <div class="connection_content">
+                <img src="img/contact.jpg" alt="" class="connection_photo">
+                <div class="connection_text">
+                    <div class="subtitle">Контакты</div>
+                    <div class="title">Свяжитесь со мной</div>
+                    <hr>
+                    <div class="txt">Любым удобным для вас способом:</div>
+                    <div class="links">
+                        <a href="#"><i class="fab fa-vk"></i></a> 
+                        <a href="#"><i class="fab fa-instagram"></i></a> 
+                        <a href="#"><i class="fab fa-telegram"></i></a> 
+                    </div>
+                    <div class="txt">Или оставьте ваши данные и я сама вам напишу:</div>
+                    <form action="#" class="connection_form">
+                        <div class="form_input">
+                            <input name="name" class="name" type="text">
+                            <label for="name">Ваше имя</label>
+                        </div>
+                        <div class="form_input">
+                            <input name="email" class="email" type="text">
+                            <label for="email">Ваша почта</label>
+                        </div>
+                        <div class="form_textarea">
+                            <textarea name="descr" id="textarea"></textarea>
+                            <label for="descr">Ваше сообщение</label>
+                        </div>
+                    </form>
+                    <button class="button">Отправить сообщение</button>
+                </div>
+            </div>
+        </div>
     </section>
 
     <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>

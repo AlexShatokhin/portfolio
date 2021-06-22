@@ -1,0 +1,32 @@
+.content{
+    display: grid;
+    grid-template: repeat(2,280px) / repeat(4,minmax(auto,280px));
+    grid-gap: 5px; 
+    grid-template-areas:
+    "pulse uber bread plans"
+    "pulse mac mac plans";
+}
+
+
+@media(max-width: 767px){
+    .content{
+        grid-template: repeat(2,160px) / repeat(4,minmax(auto,280px));
+        grid-template-areas:
+        "pulse uber bread plans"
+        "pulse mac mac plans"; 
+    }
+}
+
+@media(max-width: 525px){
+    .content{
+        grid-template: repeat(5,300px) / 100%;
+        grid-template-areas:
+        "pulse"
+        "uber"
+        "bread"
+        "mac"
+        "plans";
+        padding: 20px;
+        grid-gap: 7px; 
+    }
+}

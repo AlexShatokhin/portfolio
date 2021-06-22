@@ -7,6 +7,9 @@ $(window).scroll(function(){
             $('.color').css('color','white');
             $('.backcolor').css('background-color','white');            
         }
+        if(window.pageYOffset > 1400){
+            $('.skill_line_main').animate({left:'0px'},'slow');
+        }
     },30);
   });
 
@@ -28,3 +31,6 @@ $('.close').click(function(){
     $('.overlay_active').removeClass('overlay');
     $('.menu_background').removeClass('menu_background_active');
 });
+
+      
+
