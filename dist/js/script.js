@@ -7,7 +7,6 @@ $(window).scroll(function(){
             $('.color').css('color','white');
             $('.backcolor').css('background-color','white');            
         }
-        console.log(window.pageYOffset)
         if(window.pageYOffset > 1400){
             $('.skill_line_main').animate({left:'0px'},'slow');
         }
@@ -33,14 +32,37 @@ $('.close').click(function(){
     $('.menu_background').removeClass('menu_background_active');
 });
 
-$('.connection_text form').validate({
+// $('#form').validate({
+//     rules: {
+//         name: "required",
+//         email: {
+//           required: true,
+//         }, 
+//       },
+//       messages: {
+//         name: {
+//           required:"Пожалуйста, введите своё имя",
+//         },
+//         email: {
+//           required: "Пожалуйста, введите свою эл. почту",
+//           email: "E-mail адрес должен содержать @"
+//         },
+//       }
+//   });
+$('#myForm').validate({
     rules: {
-        name: "required",
-        email: {
-          required: true,
-        }, 
+      email: {
+        required: true,
+        email: true
       },
-      messages: {
+      name: {
+        required: true,
+      },
+      check:{
+          required: true
+      }
+    },
+    messages:{
         name: {
           required:"Пожалуйста, введите своё имя",
         },
@@ -48,5 +70,23 @@ $('.connection_text form').validate({
           required: "Пожалуйста, введите свою эл. почту",
           email: "E-mail адрес должен содержать @"
         },
-      }
+        check:{
+            required:'Пожалуйста, ознакомтесь с Политикой конфиденциальности'
+        }
+    }
   });
+
+  $('form').submit(function(e) {
+    e.preventDefault();
+    $.ajax({
+        type: "POST",
+        url: "../mailer/smart.php",
+        data: $(this).serialize()
+    }).done(function() {
+        $(this).find("input").val("");
+        $('#name, #email, #textarea').fadeOut();
+
+        $('form').trigger('reset');
+    });
+    return false;
+});

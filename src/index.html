@@ -111,17 +111,17 @@
             <hr>
             <div class="container_grid">
                 <div class="skill_item">
-                    <img src="../icons/skills/HTML5.png" alt="" class="skill_image">
+                    <img src="icons/skills/HTML5.png" alt="" class="skill_image">
                     <div class="skill_title"> <strong>HTML5</strong> </div>
                     <div class="skill_descr">Именно он создает каркас вашего сайта или приложения, а пятая версия позволит мне создавать более SEO-оптимизированную структуру вашего продукта</div>
                 </div>
                 <div class="skill_item">
-                    <img src="../icons/skills/css3.png" alt="" class="skill_image">
+                    <img src="icons/skills/css3.png" alt="" class="skill_image">
                     <div class="skill_title"> <strong>CSS3</strong> </div>
                     <div class="skill_descr">Этот язык стилей позволяет мне создавать абсолютно любой внешний вид вашего сайта или приложения. Все ограничивается только вашей фантазией!</div>
                 </div>
                 <div class="skill_item">
-                    <img src="../icons/skills/JS.png" alt="" class="skill_image">
+                    <img src="icons/skills/JS.png" alt="" class="skill_image">
                     <div class="skill_title"> <strong>Java Script</strong></div>
                     <div class="skill_descr">Этот язык программирования позволяет оживить все что угодно: слайдеры, окна, подсказки, вкладки, получение данных от сервера и многое другое</div>
                 </div>
@@ -198,23 +198,23 @@
                         <a href="#"><i class="fab fa-telegram"></i></a> 
                     </div>
                     <div class="txt">Или оставьте ваши данные и я сам вам напишу:</div>
-                    <form action="#" class="connection_form">
+                    <form id="myForm" action="#" class="connection_form">
                         <div class="form_input">
-                            <input required placeholder="Александр" name="name" class="name" type="text">
-                            <label for="name">Ваше имя</label>
+                            <input id="name"  placeholder="Александр" name="name" class="name" type="text">
+                            <label class="label_dec" for="name">Ваше имя</label>
                         </div>
                         <div class="form_input">
-                            <input required name="email" class="email" type="text">
-                            <label for="email">Ваша почта</label>
+                            <input id="email" name="email"  class="email" type="text">
+                            <label class="label_dec" for="email">Ваша почта</label>
                         </div>
                         <div class="form_textarea">
-                            <textarea name="descr" id="textarea"></textarea>
-                            <label for="descr">Ваше сообщение</label>
+                            <textarea  name="descr" id="textarea"></textarea>
+                            <label class="label_dec" for="descr">Ваше сообщение</label>
                         </div>
                         <div class="btnPolicy">
-                            <button class="button">Отправить сообщение</button>
+                            <button type="submit" class="button">Отправить сообщение</button>
                              <div class="policy">
-                                <input required type="checkbox"> <span>Я согласен(а) с <a href="/policy.html">политикой конфиденциальности</a></span>
+                                <input required name="check" type="checkbox"> <span>Я согласен(а) с <a href="/policy.html">политикой конфиденциальности</a></span>
                             </div> 
                             
                         </div>
@@ -227,6 +227,7 @@
 
     <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>
