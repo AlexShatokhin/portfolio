@@ -7,6 +7,7 @@ $(window).scroll(function(){
             $('.color').css('color','white');
             $('.backcolor').css('background-color','white');            
         }
+        console.log(window.pageYOffset)
         if(window.pageYOffset > 1400){
             $('.skill_line_main').animate({left:'0px'},'slow');
         }
@@ -14,8 +15,8 @@ $(window).scroll(function(){
   });
 
 
-var $page = $('html, body');
-  $('a[href*="#about"]').click(function() {
+let $page = $('html, body');
+  $('a[href*="#"]').click(function() {
       $page.animate({
           scrollTop: $($.attr(this, 'href')).offset().top
       }, 900);
@@ -32,5 +33,20 @@ $('.close').click(function(){
     $('.menu_background').removeClass('menu_background_active');
 });
 
-      
-
+$('.connection_text form').validate({
+    rules: {
+        name: "required",
+        email: {
+          required: true,
+        }, 
+      },
+      messages: {
+        name: {
+          required:"Пожалуйста, введите своё имя",
+        },
+        email: {
+          required: "Пожалуйста, введите свою эл. почту",
+          email: "E-mail адрес должен содержать @"
+        },
+      }
+  });

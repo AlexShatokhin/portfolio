@@ -49,15 +49,15 @@
             <div class="overlay_wrapper">
                 <div class="overlay_close close">&times;</div>
                 <ul class = "menu">
-                    <li class="menu_item"><a target="_blank" class="close" href="#about">ПРО МЕНЯ</a></li>
-                    <li class="menu_item"><a target="_blank" class="close" href="#">МОИ НАВЫКИ</a></li>
-                    <li class="menu_item"><a target="_blank" class="close" href="#">МОИ РАБОТЫ</a></li>
-                    <li class="menu_item"><a target="_blank" class="close" href="#">КОНТАКТЫ</a></li>
+                    <li class="menu_item"><a class="close" href="#about">ПРО МЕНЯ</a></li>
+                    <li class="menu_item"><a class="close" href="#skills">МОИ НАВЫКИ</a></li>
+                    <li class="menu_item"><a class="close" href="#works">МОИ РАБОТЫ</a></li>
+                    <li class="menu_item"><a class="close" href="#contacts">КОНТАКТЫ</a></li>
                 </ul>
                 <div class="overlay_contacts">
-                    <a href="https://github.com/AlexShatokhin" class="github" ><i class="fab fa-github"></i></a>
-                    <a href="https://www.instagram.com/maybeiamsasha/" class="instagram" ><i class="fab fa-instagram"></i></a>
-                    <a href="https://vk.com/shaa2004" class="vk"><i class="fab fa-vk"></i></a>
+                    <a target="_blank" href="https://github.com/AlexShatokhin" class="github" ><i class="fab fa-github"></i></a>
+                    <a target="_blank" href="https://www.instagram.com/maybeiamsasha/" class="instagram" ><i class="fab fa-instagram"></i></a>
+                    <a target="_blank" href="https://vk.com/shaa2004" class="vk"><i class="fab fa-vk"></i></a>
                 </div>                
             </div>
         </div>
@@ -66,9 +66,9 @@
             <div class="color text" >Социальные сети</div>
             <div class="backcolor line" ></div>
             <div class="contacts">
-                <a href="https://github.com/AlexShatokhin" class="color github" ><i class="fab fa-github"></i></a>
-                <a href="https://www.instagram.com/maybeiamsasha/" class="color instagram" ><i class="fab fa-instagram"></i></a>
-                <a href="https://vk.com/shaa2004" class="color vk"><i class="fab fa-vk"></i></a>
+                <a target="_blank" href="https://github.com/AlexShatokhin" class="color github" ><i class="fab fa-github"></i></a>
+                <a target="_blank" href="https://www.instagram.com/maybeiamsasha/" class="color instagram" ><i class="fab fa-instagram"></i></a>
+                <a target="_blank" href="https://vk.com/shaa2004" class="color vk"><i class="fab fa-vk"></i></a>
             </div>
         </div>
         <div class="container">
@@ -76,7 +76,7 @@
                 <div class="subtitle subtitle__white circle">Меня зовут Александр Шатохин</div>
                 <div class="title__white">Я web-разработчик <br> из города Тирасполь</div>
                 <div class="btn_wrapper">
-                    <a href="#" class="button first_btn">Портфолио</a>
+                    <a href="#works" class="button first_btn">Портфолио</a>
                     <a href="#about" class="sec_btn">Про меня</a>
                 </div>                
             </div>
@@ -104,7 +104,7 @@
         </div>
     </section>
 
-    <section class="skill">
+    <section id="skills" class="skill">
         <div class="container">
             <div class="subtitle subtitle_centercircle">Навыки</div>
             <div class="title">Что я использую в работе</div>
@@ -158,7 +158,7 @@
 
     </section>
 
-    <section class="works">
+    <section id="works" class="works">
         <div class="container">
             <div class="subtitle subtitle_centercircle">Портфолио</div>
             <div class="title">Мои работы</div>
@@ -183,7 +183,7 @@
         </div>
     </section>
 
-    <section class="connection">
+    <section id="contacts" class="connection">
         <div class="container">
             <div class="connection_content">
                 <img src="img/contact.jpg" alt="" class="connection_photo">
@@ -197,22 +197,29 @@
                         <a href="#"><i class="fab fa-instagram"></i></a> 
                         <a href="#"><i class="fab fa-telegram"></i></a> 
                     </div>
-                    <div class="txt">Или оставьте ваши данные и я сама вам напишу:</div>
+                    <div class="txt">Или оставьте ваши данные и я сам вам напишу:</div>
                     <form action="#" class="connection_form">
                         <div class="form_input">
-                            <input name="name" class="name" type="text">
+                            <input required placeholder="Александр" name="name" class="name" type="text">
                             <label for="name">Ваше имя</label>
                         </div>
                         <div class="form_input">
-                            <input name="email" class="email" type="text">
+                            <input required name="email" class="email" type="text">
                             <label for="email">Ваша почта</label>
                         </div>
                         <div class="form_textarea">
                             <textarea name="descr" id="textarea"></textarea>
                             <label for="descr">Ваше сообщение</label>
                         </div>
+                        <div class="btnPolicy">
+                            <button class="button">Отправить сообщение</button>
+                             <div class="policy">
+                                <input required type="checkbox"> <span>Я согласен(а) с <a href="/policy.html">политикой конфиденциальности</a></span>
+                            </div> 
+                            
+                        </div>
                     </form>
-                    <button class="button">Отправить сообщение</button>
+                    
                 </div>
             </div>
         </div>
